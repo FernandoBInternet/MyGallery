@@ -1,0 +1,13 @@
+include partials/header.pug
+
+.container
+	h1.title.text-white Uploads
+	.images
+		if publics.length == 0
+			h1 Nothing so far :(
+		else
+			each val in publics
+				article
+					a(href="image/" + val._id)
+						b.text-white= val.title
+						img(src="uploads/img/" + val.image alt=val.title)

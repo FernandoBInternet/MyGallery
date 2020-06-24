@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		title My Gallery
+		if(down)
+			link(rel="stylesheet" href="../css/style.css")
+		else
+			link(rel="stylesheet" href="css/style.css")
+		link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet")
+	body
+		nav
+			h1 MyGallery
+			ul
+				li
+					a(href="/") Home
+				li
+					a(href="/upload") Upload
